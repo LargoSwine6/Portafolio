@@ -1,118 +1,139 @@
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 100px 10%;
-    min-height: 100vh;
-}
+/*====================================
+TABLETS
+====================================*/
 
-.hero-content {
-    flex: 1;
-}
+@media (max-width: 992px){
 
-.hero h1 {
-    font-size: 4rem;
-    margin: 10px 0;
-}
-
-.hero h2 {
-    font-size: 1.8rem;
-    color: #666;
-}
-
-.hero .descripcion {
-    margin-top: 15px;
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
-.botones {
-    margin-top: 25px;
-    display: flex;
-    gap: 15px;
-}
-
-.hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.hero-image img {
-    width: 100%;
-    max-width: 380px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 20px; /* opcional */
-}
-
-@media (max-width: 992px) {
-
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 80px 5%;
+    .navbar{
+        padding:20px 0;
     }
 
-    .botones {
+    #inicio.hero{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    #inicio h1{
+        font-size: 3.2rem;
+    }
+
+    #inicio h2{
+        font-size: 1.6rem;
+    }
+
+    #inicio .botones{
         justify-content: center;
         flex-wrap: wrap;
     }
 
-    .hero h1 {
-        font-size: 3rem;
-    }
-
-    .hero h2 {
-        font-size: 1.5rem;
-    }
-
-    .hero-image img {
+    #inicio .hero-image img{
         max-width: 300px;
     }
+
+    .about-container{
+        flex-direction:column;
+    }
+
+    .about-image img{
+        width:280px;
+    }
+
+    .project-card{
+        grid-template-columns:1fr;
+    }
+
+    .project-info{
+        text-align:center;
+    }
+
+    .tech{
+        justify-content:center;
+    }
+
+    .project-buttons{
+        justify-content:center;
+    }
 }
 
-@media (max-width: 768px) {
+/*====================================
+CELULARES
+====================================*/
 
-    .hero {
-        padding-top: 120px;
+@media (max-width:768px){
+
+    .section-title{
+        font-size:2.2rem;
     }
 
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero h2 {
-        font-size: 1.2rem;
-    }
-
-    .descripcion {
-        font-size: 0.95rem;
-    }
-
-    .hero-image img {
-        max-width: 240px;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .hero h1 {
-        font-size: 2.1rem;
-    }
-
-    .botones {
+    #inicio.hero{
+        padding-top:120px;
         flex-direction: column;
-        align-items: center;
-    }
-
-    .botones a {
-        width: 100%;
         text-align: center;
     }
 
-    .hero-image img {
-        max-width: 200px;
+    #inicio h1{
+        font-size:2.5rem;
+    }
+
+    #inicio h2{
+        font-size:1.2rem;
+    }
+
+    #inicio .descripcion{
+        font-size:.95rem;
+    }
+
+    #inicio .hero-image img{
+        max-width:240px;
+    }
+
+    .about-cards{
+        grid-template-columns:1fr;
+    }
+
+    .skills-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .timeline::before{
+        left:10px;
+    }
+
+    .timeline-dot{
+        left:0;
+    }
+
+    .timeline-item{
+        padding-left:45px;
+    }
+}
+
+/*====================================
+MÓVILES PEQUEÑOS
+====================================*/
+
+@media(max-width:480px){
+
+    #inicio h1{
+        font-size:2.1rem;
+    }
+
+    #inicio .botones{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    #inicio .botones a{
+        width:100%;
+        text-align:center;
+    }
+
+    .skills-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
     }
 }
