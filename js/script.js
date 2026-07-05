@@ -99,3 +99,35 @@ window.addEventListener("scroll",()=>{
         topBtn.classList.remove("show");
     }
 });
+
+document.querySelectorAll(".view-project").forEach(button => {
+    button.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        const card = button.closest(".project-card");
+
+        card.classList.toggle("expanded");
+        if(card.classList.contains("expanded")){
+            button.textContent = "Ocultar";
+        }else{
+            button.textContent = "Ver proyecto";
+            clearInterval(card.interval);
+            return;
+        }
+
+        const slides = card.querySelectorAll(".slide");
+
+        let index = 0;
+
+        slides.forEach(img=>img.classList.remove("active"));
+        slides[0].classList.add("active");
+        if(card.interval){
+            clearInterval(card.interval);
+        }
+        card.interval = setInterval(()=>{
+            slides[index].classList.remove("active");
+            index = (index + 1) % slides.length;
+            slides[index].classList.add("active");
+        },2500);
+    });
+});

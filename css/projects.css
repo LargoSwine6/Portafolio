@@ -90,7 +90,8 @@ PROYECTOS
     gap:15px;
 }
 
-.project-buttons a{
+.project-buttons a,
+.project-buttons button{
     padding:14px 26px;
     border-radius:10px;
     background:transparent;
@@ -100,7 +101,8 @@ PROYECTOS
     transition:.3s;
 }
 
-.project-buttons a:hover{
+.project-buttons a:hover,
+.project-buttons button:hover{
     background:var(--color-principal);
     transform:translateY(-3px);
 }
@@ -120,4 +122,28 @@ EFECTOS
 .project-card:hover{
     transform:translateY(-12px);
     box-shadow:0 25px 60px rgba(139,92,246,.18);
+}
+
+.project-card.expanded{
+    grid-template-columns:1fr;
+}
+
+.project-card.expanded .project-slider{
+    width:100%;
+    max-width:1000px;
+    margin:auto;
+    transform:scale(1.08);
+    transition:.4s;
+}
+
+.project-card.expanded .project-info{
+    text-align:center;
+}
+
+.project-card.expanded .tech{
+    justify-content:center;
+}
+
+.project-card.expanded .project-buttons{
+    justify-content:center;
 }
