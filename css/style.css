@@ -1,0 +1,45 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:white;
+    background:
+        radial-gradient(circle at top right,#7B2FF733,transparent 35%),
+        radial-gradient(circle at bottom left,#6D28D933,transparent 35%),
+        #0B0B18;
+    overflow-x:hidden;
+}
+
+/* ===========================
+   VARIABLES
+=========================== */
+
+:root{
+    --color-principal:#8B5CF6;
+    --color-secundario:#6D28D9;
+    --color-fondo:#0B0B18;
+    --color-card:#151525;
+    --color-texto:#FFFFFF;
+    --color-gris:#B8B8B8;
+}
+
+/* ===========================
+   CONTENEDOR
+=========================== */
+
+.container{
+    width: min(1200px, 90%);
+    margin: auto;
+}

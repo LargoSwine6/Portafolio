@@ -1,0 +1,63 @@
+/*==========================
+TECNOLOGÍAS
+==========================*/
+
+.skills{
+    padding:120px 0;
+}
+
+.skills-category{
+    margin-bottom:60px;
+}
+
+.skills-category h3{
+    color:var(--color-principal);
+    margin-bottom:25px;
+    font-size:1.5rem;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    background:var(--color-card);
+    border-radius:18px;
+    padding:35px 20px;
+    text-align:center;
+    transition:.35s;
+    border:1px solid transparent;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    border-color:var(--color-principal);
+    box-shadow:0 20px 40px rgba(139,92,246,.2);
+}
+
+.skill-card i{
+    font-size:3rem;
+    color:var(--color-principal);
+    margin-bottom:20px;
+}
+
+.skill-card h4{
+    font-size:1.1rem;
+}
+
+.card,
+.skill-card,
+.project-card,
+.contact-card{
+    transition:.35s ease;
+}
+
+.card:hover,
+.skill-card:hover,
+.project-card:hover,
+.contact-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}

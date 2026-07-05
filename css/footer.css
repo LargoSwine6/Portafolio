@@ -1,0 +1,13 @@
+/*==========================
+FOOTER
+==========================*/
+
+footer{
+    padding:30px 0;
+    text-align:center;
+    border-top:1px solid #2b2b45;
+}
+
+footer p{
+    color:var(--color-gris);
+}

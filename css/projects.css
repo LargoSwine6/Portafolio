@@ -1,0 +1,123 @@
+/*==========================
+PROYECTOS
+==========================*/
+
+.projects{
+    padding:120px 0;
+}
+
+.project-card{
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:50px;
+    align-items:center;
+    background:var(--color-card);
+    border-radius:20px;
+    padding:40px;
+    margin-top: 20px;
+}
+
+.project-slider{
+    position:relative;
+    overflow:hidden;
+    border-radius:20px;
+    aspect-ratio:16/9;
+    background:#0f0f1d;
+    border-radius:20px;
+}
+
+.project-slider img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:none;
+}
+
+.project-slider img.active{
+    display:block;
+}
+
+.prev,
+.next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:rgba(0,0,0,.5);
+    color:#fff;
+    cursor:pointer;
+    font-size:20px;
+}
+
+.prev{
+    left:15px;
+}
+
+.next{
+    right:15px;
+}
+
+.project-info h3{
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.project-info p{
+    color:var(--color-gris);
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.tech{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+.tech span{
+    background:#232338;
+    padding:8px 15px;
+    border-radius:30px;
+    color:var(--color-principal);
+}
+
+.project-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.project-buttons a{
+    padding:14px 26px;
+    border-radius:10px;
+    background:transparent;
+    border:2px solid var(--color-principal);
+    color:white;
+    font-weight:600;
+    transition:.3s;
+}
+
+.project-buttons a:hover{
+    background:var(--color-principal);
+    transform:translateY(-3px);
+}
+
+/*==========================
+EFECTOS
+==========================*/
+
+.card,
+.skill-card,
+.project-card{
+    transition:.35s;
+}
+
+.card:hover,
+.skill-card:hover,
+.project-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 25px 60px rgba(139,92,246,.18);
+}

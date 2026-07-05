@@ -1,0 +1,58 @@
+/*==========================
+EDUCACIÓN
+==========================*/
+
+.education{
+    padding:120px 0;
+}
+
+.timeline{
+    position:relative;
+    max-width:900px;
+    margin:auto;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:20px;
+    top:0;
+    width:3px;
+    height:100%;
+    background:var(--color-principal);
+}
+
+.timeline-item{
+    position:relative;
+    padding-left:70px;
+    margin-bottom:60px;
+}
+
+.timeline-dot{
+    position:absolute;
+    left:10px;
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    background:var(--color-principal);
+}
+
+.timeline-content{
+    background:var(--color-card);
+    padding:30px;
+    border-radius:15px;
+}
+
+.timeline-content span{
+    color:var(--color-principal);
+    font-weight:600;
+}
+
+.timeline-content h3{
+    margin:15px 0;
+}
+
+.timeline-content p{
+    color:var(--color-gris);
+    line-height:1.7;
+}

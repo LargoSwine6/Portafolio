@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Portafolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/aboutme.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/education.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#inicio" class="logo">
+                <span>&lt;</span>LargoSwine6<span>/&gt;</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Tecnologías</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div class="container hero-content" data-aos="fade-right">
+            <p class="saludo">
+                Hola, me llamo
+            </p>
+            <h1>
+                Oscar Yahir Gallardo Vega
+            </h1>
+            <h2>
+                <span id="typing"></span>
+            </h2>
+            <p class="descripcion">
+                Apasionado por el desarrollo web, aplicaciones móviles y bases de datos.
+                Me gusta crear soluciones modernas, funcionales y con un diseño atractivo.
+            </p>
+            <div class="botones">
+                <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+                <a href="assets/cv/Oscar_CV.pdf" class="btn btn-secondary" download> Descargar CV</a>
+            </div>
+        </div>
+        <div class="hero-image" data-aos="fade-left">
+            <img src="assents/img/OG.jpg" alt="Foto de perfil">
+        </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section class="about" id="sobre-mi">
+        <h2 class="section-title">
+            Sobre mí
+        </h2>
+        <div class="about-container">
+            <div class="about-image" data-aos="zoom-in">
+                <img src="assents/img/OG.jpg" alt="Foto">
+            </div>
+            <div class="about-content" data-aos="fade-left">
+                <h3>
+                    ¡Hola!
+                </h3>
+                <p>
+                    Soy estudiante de Ingeniería en Desarrollo de Software Multiplataforma
+                    y Técnico en Informática. Me apasiona el desarrollo web, las bases
+                    de datos y la creación de aplicaciones modernas que resuelvan problemas
+                    reales.
+                </p>
+                <div class="about-cards">
+                    <div class="card" data-aos="fade-up">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h4>Educación</h4>
+                        <p>Ingeniería en Desarrollo de Software</p>
+                    </div>
+                    <div class="card" data-aos="fade-up">
+                        <i class="fa-solid fa-code"></i>
+                        <h4>Desarrollo</h4>
+                        <p>Web, Frontend, Backend y Apps</p>
+                    </div>
+                    <div class="card" data-aos="fade-up">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h4>Ubicación</h4>
+                        <p>México</p>
+                    </div>
+                    <div class="card" data-aos="fade-up">
+                        <i class="fa-solid fa-diagram-project"></i>
+                        <h4>Proyectos</h4>
+                        <p>Aplicaciones Web y Móviles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECNOLOGÍAS -->
+    <section class="skills" id="habilidades">
+        <div class="container">
+            <h2 class="section-title">Tecnologías</h2>
+            <div class="skills-category">
+                <h3>Frontend</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="zoom-in">
+                        <i class="fa-brands fa-html5"></i>
+                        <h4>HTML5</h4>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h4>CSS3</h4>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in">
+                        <i class="fa-brands fa-js"></i>
+                        <h4>JavaScript</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>Backend</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="zoom-in">
+                        <i class="fa-brands fa-php"></i>
+                        <h4>PHP</h4>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in">
+                        <i class="fa-brands fa-java"></i>
+                        <h4>Java</h4>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in">
+                        <i class="fa-solid fa-code"></i>
+                        <h4>C#</h4>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h4>Kotlin</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>Bases de datos</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="zoom-in">
+                        <i class="fa-solid fa-database"></i>
+                        <h4>SQL</h4>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in">
+                        <i class="fa-solid fa-database"></i>
+                        <h4>PostgreSQL</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>Herramientas</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="zoom-in">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h4>Visual Studio</h4>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h4>Android Studio</h4>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in">
+                        <i class="fa-solid fa-code"></i>
+                        <h4>NetBeans</h4>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in">
+                        <i class="fa-solid fa-database"></i>
+                        <h4>PostgreSQL</h4>
+                    </div>
+                   <div class="skill-card" data-aos="zoom-in">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h4>VS Code</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="projects" id="proyectos">
+        <div class="container">
+            <h2 class="section-title">Proyectos</h2>
+
+            <!-- Proyecto 1 -->
+            <article class="project-card" data-aos="fade-up">
+                <div class="project-slider">
+                    <button class="prev">&#10094;</button>
+                    <img src="assents/img/D1.jpg" class="slide active">
+                    <img src="assents/img/D2.jpg" class="slide">
+                    <img src="assents/img/D3.jpg" class="slide">
+                    <img src="assents/img/D4.jpg" class="slide">
+                    <img src="assents/img/D5.jpg" class="slide">
+                    <img src="assents/img/D6.jpg" class="slide">
+                    <button class="next">&#10095;</button>
+                </div>
+                <div class="project-info">
+                    <h3>Animal Pet's</h3>
+                    <p>
+                        Sistema para la administración de una veterinaria.
+                        Permite gestionar clientes, mascotas, citas y productos.
+                    </p>
+                    <div class="tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="#">GitHub</a>
+                        <a href="#">Ver proyecto</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Proyecto 2 -->
+            <article class="project-card" data-aos="fade-up">
+                <div class="project-slider">
+                    <button class="prev">&#10094;</button>
+                    <img src="assents/img/C1.jpg" class="slide active">
+                    <img src="assents/img/C2.jpg" class="slide">
+                    <img src="assents/img/C3.jpg" class="slide">
+                    <button class="next">&#10095;</button>
+                </div>
+                <div class="project-info">
+                    <h3>Crusty Vibes</h3>
+                    <p>
+                        Desarrollo de una aplicación web para un restaurante de comida rápida con 
+                        arquitectura basada en componentes, navegación por rutas y diseño responsivo
+                        utilizando Bootstrap.
+                    </p>
+                    <div class="tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                        <span>Angular</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="#">GitHub</a>
+                        <a href="#">Ver proyecto</a>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Proyecto 3 -->
+            <article class="project-card" data-aos="fade-up">
+                <div class="project-slider">
+                    <button class="prev">&#10094;</button>
+                    <img src="assents/img/A1.jpg" class="slide active">
+                    <img src="assents/img/A2.jpg" class="slide">
+                    <img src="assents/img/A3.jpg" class="slide">
+                    <button class="next">&#10095;</button>
+                </div>
+                <div class="project-info">
+                    <h3>AWEBO</h3>
+                    <p>
+                        Plataforma web desarrollada para optimizar la administración de fraccionamientos
+                        mediante la gestión de residentes, tickets, reportes y cuotas de mantenimiento.
+                    </p>
+                    <div class="tech">
+                        <span>C3</span>
+                        <span>ASP.NET MVC</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>SQL Server</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="#">GitHub</a>
+                        <a href="#">Ver proyecto</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- EDUCACION -->
+    <section class="education" id="educacion">
+        <div class="container">
+            <h2 class="section-title">Educación</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span>2021 - 2024</span>
+                        <h3>Técnico en Informática</h3>
+                        <p>
+                            Formación en programación, redes, bases de datos,
+                            mantenimiento de equipos y desarrollo de software.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span>2025 - Actualidad</span>
+                        <h3>Ingeniería en Desarrollo de Software Multiplataforma</h3>
+                        <p>
+                            Desarrollo web, aplicaciones móviles,
+                            bases de datos, arquitectura de software y metodologías ágiles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-grid">
+                <a href="mailto:correo@correo.com" class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Correo</h3>
+                    <p>oscar.yahir.gv@gmail.com</p>
+                </a>
+                <a href="https://github.com/" target="_blank" class="contact-card">
+                    <i class="fa-brands fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>Ver repositorios</p>
+                </a>
+                <a href="https://linkedin.com/" target="_blank" class="contact-card">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Perfil profesional</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>
+                © 2026 Oscar Gallardo | Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration:900,
+            once:true
+        });
+    </script>
+    
+</body>
+
+</html>
